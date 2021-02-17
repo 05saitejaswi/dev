@@ -1,74 +1,50 @@
+
 <!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="Travely: Real-time intineraries powered by location AI.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="#"><img class="logo" src="./images/logo.svg" alt="Travely Logo | Homepage" /></a>
-      <div class="links">
-        <a href="#">About</a>
-        <a href="#">Docs</a>
-        <a class="button__med" href="#">Login</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="info">
-      <h1 class="hero__font">Real-time intineraries powered by location AI</h1>
-      <div class="icons">
-        <div class="icon">
-          <img src="./images/pin.svg" alt="Popular Cities" />
-          <div class="icon__info">
-            <p class="icon__top">Popular</p>
-            <p class="icon__bottom">Cities</p>
-          </div>
-        </div>
-        <div class="icon">
-          <img src="./images/guide.svg" alt="Local Insights" />
-          <div class="icon__info">
-            <p class="icon__top">Local</p>
-            <p class="icon__bottom">Insights</p>
-          </div>
-        </div>
-        <div class="icon">
-          <img src="./images/map.svg" alt="Amazing Guides" />
-          <div class="icon__info">
-            <p class="icon__top">Amazing</p>
-            <p class="icon__bottom">Guides</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="features">
-      <div class="feature">
-        <img src="images/traveler.jpg" alt="Traveler" />
-        <div class="feature__info">
-          <p class="feature__top">Hundreds of guides</p>
-          <p class="feature__bottom">New high-quality guides added each week.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <img src="images/download.jpg" alt="Travel Guide" />
-        <div class="feature__info">
-          <p class="feature__top">Vetted local experts</p>
-          <p class="feature__bottom">The largest network of local guides worldwide.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature__info">
-          <a class="feature__cta" href="#">Learn More</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">zoophilist</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="movie.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Never Stop To </h2>
+      <h3>Loving Animals</h3>
+      <p>“Animals are such agreeable friends—they ask no questions; they pass no criticisms.”</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
 </body>
+<script>
+  const menuToggle = document.querySelector('.toggle');
+  const showcase = document.querySelector('.showcase');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+  })
+</script>
 
 </html>
